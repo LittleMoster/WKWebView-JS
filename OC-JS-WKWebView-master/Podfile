@@ -1,0 +1,11 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target ‘OC与JS交互之WKWebView’ do
+
+
+
+   pod 'WebViewJavascriptBridge', '~> 6.0.2'
+
+
+end
