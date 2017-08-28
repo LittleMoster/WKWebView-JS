@@ -163,15 +163,7 @@
     // 开始右滑返回手势
     self.wkWebView.allowsBackForwardNavigationGestures = YES;
     self.wkWebView.scrollView.bounces = false;
-    
-    //用心寻味H5链接 http://ms.yonxin.com/index.php?app=h5&from=singlemessage&isappinstalled=1#/home/all?_k=ficd4d
-    //用心工匠微信端链接  http://1q73j94451.iok.la/Service/HomePage
-
-//淘宝：http://h5.m.taobao.com/moshtml
-    
-//  明涛测试  http://172.16.35.46:6688/Mobile/Login
-    //海涛测试  http://172.16.38.42:8085/Mobile/Login
-
+  
 //    [request addValue:@"skey=skeyValue" forHTTPHeaderField:@"Cookie"];
 //        NSURL *loadUrl=[NSURL URLWithString:@"http://172.16.38.42:8085/Mobile/Login"];
   
