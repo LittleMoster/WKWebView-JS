@@ -73,19 +73,19 @@
     
     WKPreferences *preferences = [WKPreferences new];
     preferences.javaScriptCanOpenWindowsAutomatically = YES;
-    preferences.minimumFontSize = 40.0;
+//    preferences.minimumFontSize = 40.0;
     configuration.preferences = preferences;
     
     self.webView = [[WKWebView alloc] initWithFrame:self.view.frame configuration:configuration];
     
     
-//    NSString *urlStr = @"http://www.baidu.com";
-//    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlStr]];
-//    [self.webView loadRequest:request];
+    NSString *urlStr = @"http://www.baidu.com";
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlStr]];
+    [self.webView loadRequest:request];
     
-    NSString *urlStr = [[NSBundle mainBundle] pathForResource:@"index.html" ofType:nil];
-    NSURL *fileURL = [NSURL fileURLWithPath:urlStr];
-    [self.webView loadFileURL:fileURL allowingReadAccessToURL:fileURL];
+//    NSString *urlStr = [[NSBundle mainBundle] pathForResource:@"index.html" ofType:nil];
+//    NSURL *fileURL = [NSURL fileURLWithPath:urlStr];
+//    [self.webView loadFileURL:fileURL allowingReadAccessToURL:fileURL];
     
     self.webView.UIDelegate = self;
     [self.view addSubview:self.webView];
